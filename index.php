@@ -26,7 +26,11 @@ $client->messages->create(
 		'body' => "Your BMI is : ".$bmi,
 	)
 );
-if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false))
+
+if(strpos($body, 'NEED') !== false)  
+{
+
+if(strpos($body, 'jersey') !== false) 
 {
 	$client->messages->create(
         $to,
@@ -37,7 +41,7 @@ if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false)
     );
 	
 }
-if ( (strpos($body, 'nyc') !== false) && if (strpos($body, 'NEED') !== false))
+if(strpos($body, 'nyc') !== false)
 {
 	$client->messages->create(
         $to,
@@ -69,4 +73,30 @@ if($bmi >="30.0")
         )
     );
 }
+
+
+
+}
+
+
+else
+	
+
+	{
+		
+		$client->messages->create(
+	$to,
+	array(
+		'from' => $from,
+		'body' => "invalid syntax",
+	)
+);
+	
+	
+	
+	}
+	
+	
+
+
 ?>
