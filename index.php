@@ -1,42 +1,37 @@
 <?php
-require_once './autoload.php';
-use Twilio\Twiml;
+error_reporting(E_ALL);
+// Code for Twilio Support Document: https://support.twilio.com/hc/en-us/articles/223134267-Building-an-SMS-Keyword-Response-Application
+// Get the PHP helper library from twilio.com/docs/php/install
+require __DIR__ . '/vendor/autoload.php'; // Loads the library. This may vary depending on how you installed the library.
+use Twilio\Rest\Client;
+
+/*
+** Your Account Sid and Auth Token from twilio.com/user/account
+*/
+$sid = "AC8bf2761c3c1d8acae165aeba62af97df";
+$token = "e58e4224d480e5a66f565b0e7188a7ca";
+$client = new Client($sid, $token);
+
+
+
 $body = $_REQUEST['Body'];
-$from = $_REQUEST['From'];
+$to = $_REQUEST['From'];
+$from = $_REQUEST['To'];
 if( (stripos($body, 'B+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("contact _ Name B+");
-}
-else if(  (stripos($body, 'A+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE){
- $response = new Twiml();
-$message = $response->message("Not Avail.");
-}
 
-else if( ($from == '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-03' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Absent on this date.");
+$message = ("contact _ Name B+");
+}
+else (  (stripos($body, 'A+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE){
+
+$message = ("Not Avail.");
 }
 
-else if( ($from != '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-03' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Sorry this is not a registered number. Please try again with a registered number.");
-}
+$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+            'body' => $body."\n".$message
+        )
+    );
 
-else if ($from != '+19292402278'){
- $response = new Twiml();
-$message = $response->message("Sorry this is not a registered number. Please try again with a registered number.");
-}
-
-
-else if( ($from == '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-04' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Absent on this date.");
-}
-
-else {
- $response = new Twiml();
-$message = $response->message("Incorrect Format. Try date(yyyy-mm-dd) attendance and Roll No.");
-}
-
-echo $response;
 ?>
