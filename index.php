@@ -8,8 +8,8 @@ use Twilio\Rest\Client;
 /*
 ** Your Account Sid and Auth Token from twilio.com/user/account
 */
-$sid = "AC8bf2761c3c1d8acae165aeba62af97df";
-$token = "e58e4224d480e5a66f565b0e7188a7ca";
+$sid = "AC4d23ac0e8a3a4b478da03182d9b0615d";
+$token = "94157f81e1c0a8400a9be02310bc4b79";
 $client = new Client($sid, $token);
 
 
@@ -21,11 +21,14 @@ if( (stripos($body, 'B+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE)){
 
 $message = ("contact _ Name B+");
 }
-else (  (stripos($body, 'A+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE){
+else if(  (stripos($body, 'A+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE){
 
 $message = ("Not Avail.");
 }
-
+else
+{
+	$message = ("Invalid.");
+}
 $client->messages->create(
         $to,
         array(
