@@ -19,21 +19,21 @@ $to = $_REQUEST['From'];
 $from = $_REQUEST['To'];
 if( (stripos($body, 'B+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE)){
 
-$message = ("contact _ Name B+");
+$message = 'contact _ Name B+';
 }
 else if(  (stripos($body, 'A+' )!== FALSE) && (stripos($body, 'jersey' )!== FALSE){
 
-$message = ("Not Avail.");
+$message = '"Not Avail.';
 }
 else
 {
-	$message = ("Invalid.");
+	$message = 'Invalid.';
 }
 $client->messages->create(
         $to,
         array(
             'from' => $from,
-            'body' => $body."\n".$message
+            'body' => $message
         )
     );
 
