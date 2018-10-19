@@ -20,8 +20,8 @@ file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
 $weight=substr($body,23,4); */
 
-$syn = substr($body, 4);
-if(strpos($sys, 'NEED') !== false)  
+$syn = substr($body, 5);
+if(strpos($syn, 'NEED') !== false)  
 {
 
 if(strpos($body, 'A+') !== false) 
