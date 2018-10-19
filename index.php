@@ -26,24 +26,24 @@ $client->messages->create(
 		'body' => "Your BMI is : ".$bmi,
 	)
 );
-if($bmi <="18.5")
+if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false)
 {
 	$client->messages->create(
         $to,
         array(
             'from' => $from,
-			'body' => "\n\nYou are UNDERWEIGHT \n\nFood Intake Necessary : \n\tMilk \n\tBanana \n\tDried Fruits \n\n Exercise Necessary : \n\tSwimming \n\tSquats \n\tCardio \n\tPullups \n\tDumbbell \n\tLateral \n\tRaises \n\tPushups",
+			'body' => "available",
         )
     );
 	
 }
-if($bmi >"18.5" and $bmi <="24.9")
+if ( (strpos($body, 'nyc') !== false) && if (strpos($body, 'NEED') !== false)
 {
 	$client->messages->create(
         $to,
         array(
             'from' => $from,
-			'body' => "\n\nYou are HEALTHY \n\nYou are good to go !! Continue with same diet plan and exercise",
+			'body' => "not available",
         )
     );
 	
