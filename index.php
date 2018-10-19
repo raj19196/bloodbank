@@ -78,21 +78,8 @@ if(stripos($body, 'A+') !== false)
 	}
 	
 	
-	
-	else
-	
 
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
 	
-	}
 }
 
 
@@ -149,19 +136,6 @@ if(stripos($body, 'A-') !== false)
     );
 	}
 	
-	else
-	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
-	}
 }
 if(stripos($body, 'B+') !== false) 
 {
@@ -215,20 +189,9 @@ if(stripos($body, 'B+') !== false)
         )
     );
 	}
-	else
 	
+}
 
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
-}
-}
 
 if(stripos($body, 'B-') !== false) 
 {
@@ -282,20 +245,7 @@ if(stripos($body, 'B-') !== false)
         )
     );
 	}
-	else
 	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
-	
-}
 }
 
 
@@ -352,20 +302,6 @@ if(stripos($body, 'AB+') !== false)
     );
 	}
 	
-	else
-	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
-	
-}
 }
 if(stripos($body, 'AB-') !== false) 
 {
@@ -419,22 +355,7 @@ if(stripos($body, 'AB-') !== false)
         )
     );
 	}
-
-
-else
 	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);	
-}
-
 }
 
 if(stripos($body, 'O+') !== false) 
@@ -490,20 +411,6 @@ if(stripos($body, 'O+') !== false)
     );
 	}
 	
-	else
-	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
-	
-}
 }
 
 
@@ -559,22 +466,8 @@ if(stripos($body, 'O-') !== false)
         )
     );
 	}
-	else
-	
-
-	{
-		
-		$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Not Available",
-	)
-);
 	
 	
-}
-
 }
 
 }
@@ -588,7 +481,7 @@ else
 	$to,
 	array(
 		'from' => $from,
-		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location>",
+		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location> \n\n ignore <>",
 	)
 );
 	
