@@ -20,14 +20,13 @@ file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
 $weight=substr($body,23,4); */
 
-$jersey = array('jerseycity', 'jersey city', 'jersy', 'jerseycit'); 
-
-if(strpos($body, 'NEED') !== false)  
+$syn = substr($body, 4);
+if(strpos($sys, 'NEED') !== false)  
 {
 
 if(strpos($body, 'A+') !== false) 
 {
-	if(strpos($body, $jersey) !== false) 
+	if(strpos($body, 'jersey city') !== false) 
 	
 	{
 	
@@ -52,56 +51,35 @@ if(strpos($body, 'A+') !== false)
         )
     );
 	}
-	else
-		
-		{
-			$client->messages->create(
-        $to,
-        array(
-            'from' => $from,
-			'body' => "Sorry Not Available ",
-        )
-    );
-		}
-}
-if(strpos($body, 'nyc') !== false)
-{
+	
+	if(strpos($body, 'queens') !== false) 
+	
+	{
+	
 	$client->messages->create(
         $to,
         array(
             'from' => $from,
-			'body' => "not available",
+			'body' => "available",
         )
     );
+	}
+	if(strpos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
 	
 }
-if("25.0"<= $bmi and $bmi <="29.9")
-{
-	$client->messages->create(
-        $to,
-        array(
-            'from' => $from,
-			'body' => "\n\nYou are OVERWEIGHT \n\nFood Intake Necessary : \n\tVegetables \n\tSprouts \n\tYogurt \n\tGreen Tea \n\tFruits \n\n Exercise Necessary : \n\tBench Press \n\tIncline Bench Press \n\tCable Crossovers \n\tOne Arm Dumbbell Rows \n\tBar pulldowns \n\tDeadlifts",
-        )
-    );
-}
-		
-if($bmi >="30.0")
-{
-	$client->messages->create(
-        $to,
-        array(
-            'from' => $from,
-			'body' => "\n\nYou are OBESE \n\nFood Intake Necessary : \n\tGreen Leafy Vegetables \n\tAvocado \n\t\Wheat \n\tSoyabean \n\tCocoa \n\tBerries \n\tGarlic \n\n Exercise Necessary : \n\tLeg Press \n\tLeg Extensions \n\tHamstring Curls \n\tSeated Calf Raises \n\tStanding Calf Raises",
-        )
-    );
-}
-
-
 
 }
-
-
 else
 	
 
