@@ -18,13 +18,17 @@ file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
 $weight=substr($body,23,4); */
 
-
+$jersey = array('jerseycity', 'jersey city', 'jersy', 'jerseycit'); 
 
 if(strpos($body, 'NEED') !== false)  
 {
 
-if(strpos($body, 'jersey') !== false) 
+if(strpos($body, 'A+') !== false) 
 {
+	if(strpos($body, $jersey) !== false) 
+	
+	
+	
 	$client->messages->create(
         $to,
         array(
@@ -81,7 +85,7 @@ else
 	$to,
 	array(
 		'from' => $from,
-		'body' => "invalid syntax",
+		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location>",
 	)
 );
 	
