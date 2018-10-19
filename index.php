@@ -27,17 +27,14 @@ if(stripos($body, 'NEED') !== false)
 if(stripos($body, 'A+') !== false) 
 {
 	if(stripos($body, 'jersey city') !== false) 
-	
-	{
-	
-	$client->messages->create(
+		{
+		$client->messages->create(
         $to,
         array(
             'from' => $from,
 			'body' => "available",
-        )
-    );
-	}
+        )  );
+		}
 	
 	if(stripos($body, 'nyc') !== false) 
 	
@@ -477,11 +474,11 @@ else
 
 	{
 		
-		$client->messages->create(
+	$client->messages->create(
 	$to,
 	array(
 		'from' => $from,
-		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location> \n\n ignore <>",
+		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location> <>",
 	)
 );
 	
