@@ -18,14 +18,7 @@ file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
 $weight=substr($body,23,4); */
 
-$bmi=$body;
-$client->messages->create(
-	$to,
-	array(
-		'from' => $from,
-		'body' => "Your BMI is : ".$bmi,
-	)
-);
+
 
 if(strpos($body, 'NEED') !== false)  
 {
