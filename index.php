@@ -1,42 +1,56 @@
 <?php
-require_once './autoload.php';
-use Twilio\Twiml;
+error_reporting(E_ALL);
+// Code for Twilio Support Document: https://support.twilio.com/hc/en-us/articles/223134267-Building-an-SMS-Keyword-Response-Application
+// Get the PHP helper library from twilio.com/docs/php/install
+require __DIR__ . '/vendor/autoload.php'; // Loads the library. This may vary depending on how you installed the library.
+use Twilio\Rest\Client;
+
+/*
+** Your Account Sid and Auth Token from twilio.com/user/account
+*/
+$sid = "AC8bf2761c3c1d8acae165aeba62af97df";
+$token = "e58e4224d480e5a66f565b0e7188a7ca";
+$client = new Client($sid, $token);
+
+$bloodDetails = array(
+    'A+'    => array('City' => 'Jersey City',
+                         'Hospital' => 'Jersey City Medical Center'),
+    'A-'       => array('City' => 'NYC',
+                         'Hospital' => 'NYC'),
+    'B+'   => array('City' => 'Boston',
+                         'Hospital' => 'Boston Medical Center'),
+    'B-'       => array('body' => 'Edison',
+                         'Hospital' => 'Edison Care'),
+		'O+'   => array('City' => 'Boston',
+										     'Hospital' => 'Boston Medical Center'),
+		'O-'       => array('body' => 'Edison',
+										     'Hospital' => 'Edison Care'),
+		'AB+'   => array('City' => 'Boston',
+													'Hospital' => 'Boston Medical Center'),
+		'AB-'       => array('body' => 'Edison',
+													'Hospital' => 'Edison Care')
+);
+
 $body = $_REQUEST['Body'];
-$from = $_REQUEST['From'];
-if( ($from == '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-01' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Present on this date.");
-}
-else if( ($from == '+19292402278')  && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-02' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Present on this date.");
-}
+$to = $_REQUEST['From'];
+$from = $_REQUEST['To'];
+file_put_contents("php://stderr", substr($body,0,3).PHP_EOL);
+$blood_group=substr($body,0,3);
 
-else if( ($from == '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-03' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Absent on this date.");
+foreach ($bloodDetails as $blood => $detail) {
+    if ($blood == $blood_group) {
+        $body = $detail['City'];
+        $Hospital= $detail['Hospital'];
+
+    }
 }
 
-else if( ($from != '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-03' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Sorry this is not a registered number. Please try again with a registered number.");
-}
+$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+            'body' => $body."\n".$Hospital
+        )
+    );
 
-else if ($from != '+19292402278'){
- $response = new Twiml();
-$message = $response->message("Sorry this is not a registered number. Please try again with a registered number.");
-}
-
-
-else if( ($from == '+19292402278') && (stripos($body, '12345' )!== FALSE) && (stripos($body, '2017-10-04' )!== FALSE) && (stripos($body, 'attendance' )!== FALSE)){
- $response = new Twiml();
-$message = $response->message("Your ward was Absent on this date.");
-}
-
-else {
- $response = new Twiml();
-$message = $response->message("Incorrect Format. Try date(yyyy-mm-dd) attendance and Roll No.");
-}
-
-echo $response;
 ?>
