@@ -37,6 +37,30 @@ if(strpos($body, 'A+') !== false)
         )
     );
 	}
+	
+	if(strpos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	else
+		
+		{
+			$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "Sorry Not Available ",
+        )
+    );
+		}
 }
 if(strpos($body, 'nyc') !== false)
 {
