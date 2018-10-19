@@ -13,6 +13,8 @@ $client = new Client($sid, $token);
 $body = $_REQUEST['Body']; 
 $to = $_REQUEST['From'];
 $from = $_REQUEST['To'];
+
+echo "Hello You Will Recive Msg Soon From Twilio";
 /*file_put_contents("php://stderr", substr($body,9,5).PHP_EOL);
 file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
