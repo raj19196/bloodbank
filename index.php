@@ -27,7 +27,7 @@ if(strpos($body, 'A+') !== false)
 {
 	if(strpos($body, $jersey) !== false) 
 	
-	
+	{
 	
 	$client->messages->create(
         $to,
@@ -36,7 +36,7 @@ if(strpos($body, 'A+') !== false)
 			'body' => "available",
         )
     );
-	
+	}
 }
 if(strpos($body, 'nyc') !== false)
 {
