@@ -26,7 +26,7 @@ $client->messages->create(
 		'body' => "Your BMI is : ".$bmi,
 	)
 );
-if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false)
+if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false))
 {
 	$client->messages->create(
         $to,
@@ -37,7 +37,7 @@ if ( (strpos($body, 'jersey') !== false) && if (strpos($body, 'NEED') !== false)
     );
 	
 }
-if ( (strpos($body, 'nyc') !== false) && if (strpos($body, 'NEED') !== false)
+if ( (strpos($body, 'nyc') !== false) && if (strpos($body, 'NEED') !== false))
 {
 	$client->messages->create(
         $to,
