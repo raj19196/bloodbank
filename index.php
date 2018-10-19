@@ -20,13 +20,13 @@ file_put_contents("php://stderr", substr($body,23,5).PHP_EOL);
 $height=substr($body,9,4);
 $weight=substr($body,23,4); */
 
-$syn = substr($body, 5);
-if(strpos($syn, 'NEED') !== false)  
+
+if(stripos($body, 'NEED') !== false)  
 {
 
-if(strpos($body, 'A+') !== false) 
+if(stripos($body, 'A+') !== false) 
 {
-	if(strpos($body, 'jersey city') !== false) 
+	if(stripos($body, 'jersey city') !== false) 
 	
 	{
 	
@@ -39,7 +39,7 @@ if(strpos($body, 'A+') !== false)
     );
 	}
 	
-	if(strpos($body, 'nyc') !== false) 
+	if(stripos($body, 'nyc') !== false) 
 	
 	{
 	
@@ -52,7 +52,7 @@ if(strpos($body, 'A+') !== false)
     );
 	}
 	
-	if(strpos($body, 'queens') !== false) 
+	if(stripos($body, 'queens') !== false) 
 	
 	{
 	
@@ -64,7 +64,7 @@ if(strpos($body, 'A+') !== false)
         )
     );
 	}
-	if(strpos($body, 'long island') !== false) 
+	if(stripos($body, 'long island') !== false) 
 	
 	{
 	
@@ -79,7 +79,394 @@ if(strpos($body, 'A+') !== false)
 	
 }
 
+
+if(stripos($body, 'A-') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
 }
+if(stripos($body, 'B+') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+
+
+if(stripos($body, 'B-') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+
+
+if(stripos($body, 'AB+') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+if(stripos($body, 'AB-') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+
+if(stripos($body, 'O+') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+
+
+if(stripos($body, 'O-') !== false) 
+{
+	if(stripos($body, 'jersey city') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'nyc') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+	if(stripos($body, 'queens') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	if(stripos($body, 'long island') !== false) 
+	
+	{
+	
+	$client->messages->create(
+        $to,
+        array(
+            'from' => $from,
+			'body' => "available",
+        )
+    );
+	}
+	
+}
+}
+
 else
 	
 
