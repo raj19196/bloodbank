@@ -33,9 +33,9 @@ if(stripos($body, 'A+') !== false)
         array(
             'from' => $from,
 			'body' => "
-			Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			Blood Banks \nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500\n\n
+Community Blood Services (866) 228-1500 \n Donars \n\n
 Donors
 drashti patel A+ (201) 432-4600
 daniel A+ (201) 432-4600
@@ -53,13 +53,14 @@ ashlesha deshmukh A- (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "Blood Banks \nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
-Safeblood Foundation-America - (212) 230-1666\n\n
+Safeblood Foundation-America - (212) 230-1666\n
 Donors
 evan O- (201) 432-4600
 isaac A- (201) 432-4600
-zoe O+ (201) 432-4600",
+zoe O+ (201) 432-4600
+victoria A+ (201) 432-4600",
         )
     );
 	}
@@ -72,9 +73,13 @@ zoe O+ (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n Blood Bank Transfusion Service (212) 746-4443
+			'body' => "Blood Banks \n Blood Bank Transfusion Service (212) 746-4443
 Children's Blood Foundation -(212) 297-4336
-DCI Biologicals, Inc. -(718) 479-3300",
+DCI Biologicals, Inc. -(718) 479-3300 \n
+Donors
+luis A+ (201) 432-4600
+molly A- (201) 432-4600
+lydia A- (201) 432-4600",
         )
     );
 	}
@@ -86,9 +91,14 @@ DCI Biologicals, Inc. -(718) 479-3300",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n New York Blood Center Inc -(718) 706-5200
+			'body' => "Blood Banks \n New York Blood Center Inc -(718) 706-5200
 Long Island Blood Services - (800) 933-2566
-Memorial Sloan Kettering Blood Donation Room -(212) 639-7643",
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643 \n
+Donors 
+Angel A+ (201) 432-4600
+Jordan A- (201) 432-4600
+sophie O+ (201) 432-4600
+alaxa O- (201) 432-4600",
         )
     );
 	}
@@ -111,7 +121,8 @@ if(stripos($body, 'A-') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n
+ashlesha deshmukh A- (201) 432-4600",
         )
     );
 	}
@@ -124,7 +135,9 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666",
         )
     );
 	}
@@ -137,7 +150,9 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300",
         )
     );
 	}
@@ -149,7 +164,11 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks\n New York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643 \n Donors \n 
+Jordan A- (201) 432-4600
+alaxa O- (201) 432-4600",
         )
     );
 	}
@@ -167,7 +186,11 @@ if(stripos($body, 'B+') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n 
+raj patel B+ (201) 432-4600
+mia B+ (201) 432-4600
+noah O+ (201) 432-4600
+emma O- (201) 432-4600",
         )
     );
 	}
@@ -180,7 +203,14 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666\n
+Donors
+ryan B+ (201) 432-4600
+sarah B+ (201) 432-4600
+evan O- (201) 432-4600
+zoe O+ (201) 432-4600",
         )
     );
 	}
@@ -193,7 +223,14 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300\n Donars 
+connor B+ (201) 432-4600
+henry B+ (201) 432-4600
+maria B+ (201) 432-4600
+robert O+ (201) 432-4600
+kylie O- (201) 432-4600",
         )
     );
 	}
@@ -205,7 +242,13 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643\n Donars 
+sophie O+ (201) 432-4600
+alaxa O- (201) 432-4600
+aaron B+ (201) 432-4600
+wyatt B+ (201) 432-4600",
         )
     );
 	}
@@ -225,7 +268,9 @@ if(stripos($body, 'B-') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n
+emma O- (201) 432-4600
+ava B- (201) 432-4600",
         )
     );
 	}
@@ -238,7 +283,11 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666 Donars
+michael B- (201) 432-4600
+ella O- (201) 432-4600",
         )
     );
 	}
@@ -251,7 +300,10 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300\n Donars
+kylie O- (201) 432-4600",
         )
     );
 	}
@@ -263,7 +315,11 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643\n Donars
+claire B- (201) 432-4600
+alaxa O- (201) 432-4600",
         )
     );
 	}
@@ -283,7 +339,20 @@ if(stripos($body, 'AB+') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\n Christopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n
+
+raj patel B+ (201) 432-4600
+ashlesha deshmukh A- (201) 432-4600
+drashti patel A+ (201) 432-4600
+Sophia O+ (201) 432-4600
+isabella AB- (201) 432-4600
+emma O- (201) 432-4600
+ava B- (201) 432-4600
+emily AB- (201) 432-4600
+mia B+ (201) 432-4600
+daniel A+ (201) 432-4600
+matthew A+ (201) 432-4600
+noah O+ (201) 432-4600",
         )
     );
 	}
@@ -296,7 +365,22 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666\n Donars
+michael B- (201) 432-4600
+ella O- (201) 432-4600
+william AB- (201) 432-4600
+john AB+ (201) 432-4600
+ryan B+ (201) 432-4600
+sarah B+ (201) 432-4600
+zoey B- (201) 432-4600
+victoria A+ (201) 432-4600
+anna AB- (201) 432-4600
+evan O- (201) 432-4600
+isaac A- (201) 432-4600
+zoe O+ (201) 432-4600
+",
         )
     );
 	}
@@ -309,7 +393,20 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300\n Donars
+robert O+ (201) 432-4600
+kylie O- (201) 432-4600
+julia AB- (201) 432-4600
+henry B+ (201) 432-4600
+connor B+ (201) 432-4600
+sam AB- (201) 432-4600
+luis A+ (201) 432-4600
+molly A- (201) 432-4600
+lydia A- (201) 432-4600
+maria B+ (201) 432-4600
+",
         )
     );
 	}
@@ -321,7 +418,20 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643\n Donars
+Angel A+ (201) 432-4600
+Jordan A- (201) 432-4600
+Taylor B+ (201) 432-4600
+claire B- (201) 432-4600
+sophie O+ (201) 432-4600
+alaxa O- (201) 432-4600
+julia AB- (201) 432-4600
+bella AB+ (201) 432-4600
+aaron B+ (201) 432-4600
+wyatt B+ (201) 432-4600
+eli A + (201) 432-4600",
         )
     );
 	}
@@ -339,7 +449,10 @@ if(stripos($body, 'AB-') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n
+ashlesha deshmukh A- (201) 432-4600
+isabella AB- (201) 432-4600
+emma O- (201) 432-4600",
         )
     );
 	}
@@ -352,7 +465,14 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666\n Donars
+zoey B- (201) 432-4600
+victoria A+ (201) 432-4600
+anna AB- (201) 432-4600
+evan O- (201) 432-4600
+isaac A- (201) 432-4600",
         )
     );
 	}
@@ -365,7 +485,14 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300 \n Donars
+molly A- (201) 432-4600
+lydia A- (201) 432-4600
+kylie O- (201) 432-4600
+julia AB- (201) 432-4600
+",
         )
     );
 	}
@@ -377,7 +504,13 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643\n Donars
+claire B- (201) 432-4600
+Jordan A- (201) 432-4600
+alaxa O- (201) 432-4600
+julia AB- (201) 432-4600",
         )
     );
 	}
@@ -396,7 +529,10 @@ if(stripos($body, 'O+') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n
+Sophia O+ (201) 432-4600
+emma O- (201) 432-4600
+noah O+ (201) 432-4600",
         )
     );
 	}
@@ -409,7 +545,10 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666 \n Donars
+Sorry no Donor available",
         )
     );
 	}
@@ -422,7 +561,11 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300\n Donor
+kylie O- (201) 432-4600
+robert O+ (201) 432-4600",
         )
     );
 	}
@@ -434,7 +577,12 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643 \n\n
+			Donars
+			sophie O+ (201) 432-4600
+alaxa O- (201) 432-4600",
         )
     );
 	}
@@ -454,7 +602,7 @@ if(stripos($body, 'O-') !== false)
             'from' => $from,
 			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
-Community Blood Services (866) 228-1500",
+Community Blood Services (866) 228-1500 \n Donars \n Sorry no Donor Available",
         )
     );
 	}
@@ -467,7 +615,11 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666 \n Donars \n Sorry no Donor Available \n Nearby Location in Queens
+kylie O- (201) 432-4600
+alaxa O- (201) 432-4600",
         )
     );
 	}
@@ -480,7 +632,10 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nBlood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300\n Donars
+kylie O- (201) 432-4600",
         )
     );
 	}
@@ -492,7 +647,10 @@ Community Blood Services (866) 228-1500",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n",
+			'body' => "Blood Banks \n\nNew York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643\n Donars
+alaxa O- (201) 432-4600",
         )
     );
 	}
