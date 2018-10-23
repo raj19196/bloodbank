@@ -32,7 +32,16 @@ if(stripos($body, 'A+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "
+			Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500\n\n
+Donors
+drashti patel A+ (201) 432-4600
+daniel A+ (201) 432-4600
+matthew A+ (201) 432-4600
+Sophia O+ (201) 432-4600
+ashlesha deshmukh A- (201) 432-4600",
         )  );
 		}
 	
@@ -44,7 +53,13 @@ if(stripos($body, 'A+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+New York Blood Center Inc - (718) 706-5290
+Safeblood Foundation-America - (212) 230-1666\n\n
+Donors
+evan O- (201) 432-4600
+isaac A- (201) 432-4600
+zoe O+ (201) 432-4600",
         )
     );
 	}
@@ -57,7 +72,9 @@ if(stripos($body, 'A+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n Blood Bank Transfusion Service (212) 746-4443
+Children's Blood Foundation -(212) 297-4336
+DCI Biologicals, Inc. -(718) 479-3300",
         )
     );
 	}
@@ -69,7 +86,9 @@ if(stripos($body, 'A+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n New York Blood Center Inc -(718) 706-5200
+Long Island Blood Services - (800) 933-2566
+Memorial Sloan Kettering Blood Donation Room -(212) 639-7643",
         )
     );
 	}
@@ -90,7 +109,9 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -103,7 +124,7 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -116,7 +137,7 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -128,7 +149,7 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -144,7 +165,9 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -157,7 +180,7 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -170,7 +193,7 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -182,7 +205,7 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -200,7 +223,9 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -213,7 +238,7 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -226,7 +251,7 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -238,7 +263,7 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -256,7 +281,9 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n Christopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -269,7 +296,7 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -282,7 +309,7 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -294,7 +321,7 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -310,7 +337,9 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -323,7 +352,7 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -336,7 +365,7 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -348,7 +377,7 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -365,7 +394,9 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -378,7 +409,7 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -391,7 +422,7 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -403,7 +434,7 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -421,7 +452,9 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+Central Jersey Blood Center (732) 901-0720 ,
+Community Blood Services (866) 228-1500",
         )
     );
 	}
@@ -434,7 +467,7 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -447,7 +480,7 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -459,7 +492,7 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "available",
+			'body' => "Blood Banks \n\n",
         )
     );
 	}
@@ -478,7 +511,7 @@ else
 	$to,
 	array(
 		'from' => $from,
-		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location> <>",
+		'body' => "Invalid syntax \n\n Please check syntax \n\n NEED <Bloodgroup> space <Location> \n\n ignore <>",
 	)
 );
 	
