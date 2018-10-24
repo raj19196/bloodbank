@@ -33,7 +33,7 @@ if(stripos($body, 'A+') !== false)
         array(
             'from' => $from,
 			'body' => "
-			Blood Banks \nChristopher Columbus Health Center - (201) 432-4600,
+			\n Blood Banks In Jersey City \nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n\n
 Donors
@@ -53,7 +53,7 @@ ashlesha deshmukh A- (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666\n
 Donors
@@ -119,7 +119,7 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 ashlesha deshmukh A- (201) 432-4600",
@@ -135,7 +135,7 @@ ashlesha deshmukh A- (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666",
         )
@@ -184,7 +184,7 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n 
 raj patel B+ (201) 432-4600
@@ -266,7 +266,7 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 emma O- (201) 432-4600
@@ -283,7 +283,7 @@ ava B- (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666 Donars
 michael B- (201) 432-4600
@@ -337,7 +337,7 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\n Christopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\n Christopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 
@@ -365,7 +365,7 @@ noah O+ (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666\n Donars
 michael B- (201) 432-4600
@@ -447,7 +447,7 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 ashlesha deshmukh A- (201) 432-4600
@@ -465,7 +465,7 @@ emma O- (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666\n Donars
 zoey B- (201) 432-4600
@@ -527,7 +527,7 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 Sophia O+ (201) 432-4600
@@ -545,7 +545,7 @@ noah O+ (201) 432-4600",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666 \n Donars
 Sorry no Donor available",
@@ -600,7 +600,7 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n Sorry no Donor Available",
         )
@@ -615,7 +615,7 @@ Community Blood Services (866) 228-1500 \n Donars \n Sorry no Donor Available",
         $to,
         array(
             'from' => $from,
-			'body' => "Blood Banks \n\nFamilyCord - Cord Blood Banking -(800) 490-2673
+			'body' => "\n Blood Banks In NYC\nFamilyCord - Cord Blood Banking -(800) 490-2673
 New York Blood Center Inc - (718) 706-5290
 Safeblood Foundation-America - (212) 230-1666 \n Donars \n Sorry no Donor Available \n Nearby Location in Queens
 kylie O- (201) 432-4600
