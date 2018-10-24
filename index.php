@@ -33,7 +33,7 @@ if(stripos($body, 'A+') !== false)
         array(
             'from' => $from,
 			'body' => "
-			\n Blood Banks In Jersey City \nChristopher Columbus Health Center - (201) 432-4600,
+			\n Blood Banks In 07306 \nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n\n
 Donors
@@ -111,7 +111,7 @@ alaxa O- (201) 432-4600",
 
 if(stripos($body, 'A-') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -119,7 +119,7 @@ if(stripos($body, 'A-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 ashlesha deshmukh A- (201) 432-4600",
@@ -176,7 +176,7 @@ alaxa O- (201) 432-4600",
 }
 if(stripos($body, 'B+') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -184,7 +184,7 @@ if(stripos($body, 'B+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n 
 raj patel B+ (201) 432-4600
@@ -258,7 +258,7 @@ wyatt B+ (201) 432-4600",
 
 if(stripos($body, 'B-') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -266,7 +266,7 @@ if(stripos($body, 'B-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 emma O- (201) 432-4600
@@ -329,7 +329,7 @@ alaxa O- (201) 432-4600",
 
 if(stripos($body, 'AB+') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -337,7 +337,7 @@ if(stripos($body, 'AB+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\n Christopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\n Christopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 
@@ -439,7 +439,7 @@ eli A + (201) 432-4600",
 }
 if(stripos($body, 'AB-') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -447,7 +447,7 @@ if(stripos($body, 'AB-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 ashlesha deshmukh A- (201) 432-4600
@@ -519,7 +519,7 @@ julia AB- (201) 432-4600",
 
 if(stripos($body, 'O+') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -527,7 +527,7 @@ if(stripos($body, 'O+') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n
 Sophia O+ (201) 432-4600
@@ -592,7 +592,7 @@ alaxa O- (201) 432-4600",
 
 if(stripos($body, 'O-') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 	
 	{
 	
@@ -600,7 +600,7 @@ if(stripos($body, 'O-') !== false)
         $to,
         array(
             'from' => $from,
-			'body' => "\n Blood Banks In Jersey City\nChristopher Columbus Health Center - (201) 432-4600,
+			'body' => "\n Blood Banks In 07306\nChristopher Columbus Health Center - (201) 432-4600,
 Central Jersey Blood Center (732) 901-0720 ,
 Community Blood Services (866) 228-1500 \n Donars \n Sorry no Donor Available",
         )
