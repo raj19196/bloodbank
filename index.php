@@ -26,7 +26,7 @@ if(stripos($body, 'NEED') !== false)
 
 if(stripos($body, 'A+') !== false) 
 {
-	if(stripos($body, 'jersey city') !== false) 
+	if(stripos($body, '07306') !== false) 
 		{
 		$client->messages->create(
         $to,
